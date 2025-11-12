@@ -3,7 +3,7 @@ export class Router{
         this.routes = routes;
         this.render = render;
         document.addEventListener('popstate', () => resolve());
-        this.resolve()
+        this.resolve('/');
     }
     
     navigate(path) {
